@@ -9,7 +9,6 @@ on:
       - master
  
 jobs:
-
   R-CMD-Check:
     runs-on: ubuntu-latest
     steps:
