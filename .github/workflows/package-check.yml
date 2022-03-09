@@ -17,6 +17,8 @@ jobs:
 
       - name: "🔧 Setup R"
         uses: r-lib/actions/setup-r@master
+        with:
+          use-public-rspm: true
 
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@master
