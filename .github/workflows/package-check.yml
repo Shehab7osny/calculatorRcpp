@@ -20,3 +20,6 @@ jobs:
 
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@master
+
+      - name: "✅ Check R Package"
+        uses: r-lib/actions/check-r-package@master
