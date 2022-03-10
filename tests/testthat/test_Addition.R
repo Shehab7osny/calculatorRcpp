@@ -14,8 +14,8 @@ test_that(
 test_that(
     "Subtraction operation is executed successfully!", 
     {
-        expect_equal(AddOperation(6, 4), 2)
-        expect_equal(AddOperation(6.3, 4.2), 2.1)
+        expect_equal(SubtractOperation(6, 4), 2)
+        expect_equal(SubtractOperation(6.3, 4.2), 2.1)
     }
 )
 
@@ -23,8 +23,8 @@ test_that(
 test_that(
     "Multiplication operation is executed successfully!", 
     {
-        expect_equal(AddOperation(6, 4), 24)
-        expect_equal(AddOperation(6.3, 4.2), 26.46)
+        expect_equal(MultiplyOperation(6, 4), 24)
+        expect_equal(MultiplyOperation(6.3, 4.2), 26.46)
     }
 )
 
@@ -32,7 +32,7 @@ test_that(
 test_that(
     "Division operation is executed successfully!", 
     {
-        expect_equal(AddOperation(6, 4), 1.5)
-        expect_equal(AddOperation(6.3, 4.2), 1.5)
+        expect_equal(DivideOperation(6, 4), 1.5)
+        expect_equal(DivideOperation(6.3, 4.2), 1.5)
     }
 )
