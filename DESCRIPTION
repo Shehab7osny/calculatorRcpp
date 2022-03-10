@@ -1,9 +1,9 @@
 Package: calculatorRcpp
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Calcuator implemented using Rcpp
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Shehab Hosny
+Maintainer: The package maintainer <shehab20156@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: GPL-3

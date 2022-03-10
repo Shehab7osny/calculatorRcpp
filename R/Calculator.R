@@ -1,11 +1,11 @@
 ## usethis namespace: start
 #' @importFrom Rcpp sourceCpp
+#' @useDynLib calculatorRcpp
 ## usethis namespace: end
 NULL
 
 #' AddOperation
 #' @export
-#' @useDynLib calculatorRcpp
 #' @param a as first operand
 #' @param b as second operand
 AddOperation <- function(a, b) {
@@ -14,7 +14,6 @@ AddOperation <- function(a, b) {
 
 #' SubtractOperation
 #' @export
-#' @useDynLib calculatorRcpp
 #' @param a as first operand
 #' @param b as second operand
 SubtractOperation <- function(a, b) {
@@ -23,7 +22,6 @@ SubtractOperation <- function(a, b) {
 
 #' MultiplyOperation
 #' @export
-#' @useDynLib calculatorRcpp
 #' @param a as first operand
 #' @param b as second operand
 MultiplyOperation <- function(a, b) {
@@ -32,7 +30,6 @@ MultiplyOperation <- function(a, b) {
 
 #' DivideOperation
 #' @export
-#' @useDynLib calculatorRcpp
 #' @param a as first operand
 #' @param b as second operand
 DivideOperation <- function(a, b) {
