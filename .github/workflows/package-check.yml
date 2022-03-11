@@ -46,5 +46,10 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
+      - name: "📦 Install rcmdcheck Package"
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::rcmdcheck
+
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
