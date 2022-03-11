@@ -31,4 +31,4 @@ jobs:
       - name: "📋 No Memory Leakage in cpp source code"
         uses: r-lib/actions/run-rchk@v2
         with:
-          run-only: true
+          setup-only: true
