@@ -79,3 +79,6 @@ jobs:
         uses: r-lib/actions/run-rchk@v2
         with:
           setup-only: true
+          
+      - name: "📢 Announce Completion"
+        run: echo "All checks are completed"
