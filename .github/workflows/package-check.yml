@@ -60,3 +60,20 @@ jobs:
 
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
+
+  check-mem-leak:
+    name: Check Memory Leakage
+    needs:
+      - check-package
+    runs-on: ubuntu-latest
+
+    container:
+      image: rhub/ubuntu-rchk
+      options: --user=root
+
+    steps:
+      - name: "☁️ Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "📋 No Memory Leakage"
+        uses: r-lib/actions/run-rchk@v2
