@@ -38,7 +38,7 @@ jobs:
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@v2
 
-  build-linux:
+  check-package:
     name: Check R Package
     needs:
       - build-linux
