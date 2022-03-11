@@ -3,7 +3,7 @@
 
 # calculatorRcpp
 
-A simple **R** package implementing a workflow for [**GitHub Actions**](https://github.com/features/actions?utm_source=google&utm_medium=ppc&utm_campaign=2022q3-adv-WW-Google_Search-eg_brand&scid=7013o000002CdxYAAS&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0DVNM00m8V53z9hOkLGKZcOMNosW_sXPmWODSzKHE9oTEhGZt1ltwxoCoy8QAvD_BwE) using [r-lib/actions](https://github.com/r-lib/actions).
+A simple **R** package (calculator) implementing a workflow for [**GitHub Actions**](https://github.com/features/actions?utm_source=google&utm_medium=ppc&utm_campaign=2022q3-adv-WW-Google_Search-eg_brand&scid=7013o000002CdxYAAS&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0DVNM00m8V53z9hOkLGKZcOMNosW_sXPmWODSzKHE9oTEhGZt1ltwxoCoy8QAvD_BwE) using [r-lib/actions](https://github.com/r-lib/actions).
 
 ## Build and Installation
 
@@ -39,6 +39,18 @@ This repository's [workflow](https://github.com/Shehab7osny/calculatorRcpp/blob/
 ## Examples
 Seceral examples can be located in the [demo](https://github.com/Shehab7osny/calculatorRcpp/tree/main/demo) directory. These examples are as follows:
 - `AddExample`</br>Illustrates the addition functionality of the calculator.
+  ```sh
+  R -e 'demo("AddExample", "calculatorRcpp")'
+  ```
 - `SubtractExample`</br>Illustrates the subtraction functionality of the calculator.
+  ```sh
+  R -e 'demo("SubtractExample", "calculatorRcpp")'
+  ```
 - `MultiplyExample`</br>Illustrates the multiplication functionality of the calculator.
+  ```sh
+  R -e 'demo("MultiplyExample", "calculatorRcpp")'
+  ```
 - `DivideExample`</br>Illustrates the division functionality of the calculator.
+  ```sh
+  R -e 'demo("DivideExample", "calculatorRcpp")'
+  ```
