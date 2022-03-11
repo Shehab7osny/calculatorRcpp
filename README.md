@@ -1,4 +1,4 @@
-![Build Status](https://github.com/Shehab7osny/calculatorRcpp/workflows/package-check.yml/badge.svg)
+![Build Status](https://github.com/Shehab7osny/calculatorRcpp/actions/workflows/package-check.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # calculatorRcpp
