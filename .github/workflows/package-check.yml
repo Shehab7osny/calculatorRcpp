@@ -23,6 +23,9 @@ jobs:
 
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rcmdcheck
+          needs: check
 
   build-windows:
     name: Build Package - Windows
@@ -46,11 +49,5 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
-      - name: "📦 Install rcmdcheck Package"
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::rcmdcheck
-          needs: check
-
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
