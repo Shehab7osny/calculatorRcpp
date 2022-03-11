@@ -27,5 +27,5 @@ jobs:
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
 
-      - name: "☑️ No Memory Leakage in cpp source code"
+      - name: "📋 No Memory Leakage in cpp source code"
         uses: r-lib/actions/run-rchk@v2
