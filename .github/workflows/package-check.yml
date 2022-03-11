@@ -9,8 +9,15 @@ on:
       - main
  
 jobs:
+
   R-CMD-Check:
+  
     runs-on: ubuntu-latest
+    
+    container:
+      image: rhub/ubuntu-rchk
+      options: --user=root
+      
     steps:
       - name: "☁️ checkout repository"
         uses: actions/checkout@v2
