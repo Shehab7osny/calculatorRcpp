@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # calculatorRcpp
 
 A simple **R** package implementing a workflow for [**GitHub Actions**](https://github.com/features/actions?utm_source=google&utm_medium=ppc&utm_campaign=2022q3-adv-WW-Google_Search-eg_brand&scid=7013o000002CdxYAAS&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0DVNM00m8V53z9hOkLGKZcOMNosW_sXPmWODSzKHE9oTEhGZt1ltwxoCoy8QAvD_BwE) using [r-lib/actions](https://github.com/r-lib/actions).
