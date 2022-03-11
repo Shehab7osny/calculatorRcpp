@@ -32,3 +32,10 @@ This repository's [workflow](https://github.com/Shehab7osny/calculatorRcpp/blob/
   **Using:**
     - r-lib/actions/run-rchk </br>
   **Limitations:** Due to an [issue](https://github.com/r-lib/actions/issues/494) in [r-lib/actions](https://github.com/r-lib/actions), this check is only done during setup.
+
+## Examples
+Seceral examples can be located in the [demo](https://github.com/Shehab7osny/calculatorRcpp/demo) directory. These examples are as follows:
+- `AddExample`: Illustrates the addition functionality of the calculator.
+- `SubtractExample`: Illustrates the subtraction functionality of the calculator.
+- `MultiplyExample`: Illustrates the multiplication functionality of the calculator.
+- `DivideExample`: Illustrates the division functionality of the calculator.
