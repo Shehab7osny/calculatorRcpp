@@ -16,20 +16,19 @@ Rscript.exe -e 'devtools::install_github("shehab7osny/calculatorrcpp")'
 
 
 ## GitHub Actions Workflow
-This repository's [workflow]() carries out the following jobs:
+This repository's [workflow](https://github.com/Shehab7osny/calculatorRcpp/blob/main/.github/workflows/package-check.yml) carries out the following jobs:
 - Checks for a successful build on Linux. </br>
-  `Using:`
+  **Using:**
     - r-lib/actions/setup
     - r-lib/actions/setup-r-dependencies
 - Checks for a successful build on Windows. </br>
-  `Using:`
+  **Using:**
     - r-lib/actions/setup
     - r-lib/actions/setup-r-dependencies
 - Checks for a errors in the R package. </br>
-  `Using:`
+  **Using:**
     - r-lib/actions/check-r-package
 - Checks for any memory leakages in the R package. </br>
-  `Using:`
+  **Using:**
     - r-lib/actions/run-rchk </br>
-  `Limitations:`
-    - Due to an [issue](https://github.com/r-lib/actions/issues/494) in [r-lib/actions](https://github.com/r-lib/actions), this check is only done during setup.
+  **Limitations:** Due to an [issue](https://github.com/r-lib/actions/issues/494) in [r-lib/actions](https://github.com/r-lib/actions), this check is only done during setup.
