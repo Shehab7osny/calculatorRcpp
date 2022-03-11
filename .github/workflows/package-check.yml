@@ -19,22 +19,11 @@ jobs:
       - name: "🔧 Setup R"
         uses: r-lib/actions/setup-r@v2
 
-      - name: "📋 No Memory Leakage during Setup"
-        uses: r-lib/actions/run-rchk@v2
-        with:
-          setup-only: true
-
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: any::rcmdcheck
           needs: check
-          cache-version: rchk-1
 
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
-
-      - name: "📋 No Memory Leakage during Run"
-        uses: r-lib/actions/run-rchk@v2
-        with:
-          run-only: true
