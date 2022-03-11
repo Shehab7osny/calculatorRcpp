@@ -9,7 +9,9 @@ on:
       - main
  
 jobs:
-  R-CMD-Check:
+  
+  build-linux:
+    name: Build Package - Linux
     runs-on: ubuntu-latest
       
     steps:
@@ -21,9 +23,28 @@ jobs:
 
       - name: "📦 Install R Package"
         uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::rcmdcheck
-          needs: check
 
+  build-windows:
+    name: Build Package - Windows
+    runs-on: windows-latest
+      
+    steps:
+      - name: "☁️ Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "🔧 Setup R"
+        uses: r-lib/actions/setup-r@v2
+
+      - name: "📦 Install R Package"
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+  build-linux:
+    name: Check R Package
+    needs:
+      - build-linux
+      - build-windows
+    runs-on: ubuntu-latest
+      
+    steps:
       - name: "☑️ Check R Package"
         uses: r-lib/actions/check-r-package@v2
